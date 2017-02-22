@@ -1,6 +1,7 @@
 from pyo import *
+from settings import audioSource
 
-s = Server(audio='jack', nchnls=1).boot()
+s = Server(audio = audioSource, nchnls=1).boot()
 s.start()
 s.amp = 0.1
 
